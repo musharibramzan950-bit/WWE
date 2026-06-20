@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>WWE Card</title>
+    <title>Document</title>
+</head>
+<style>
+    .banner{
+        display: flex;
+        flex-direction: row;
+    }
+    #banner2{
+         padding-left: 320px; 
+        padding-top: 30px; 
+        color: white;
+        font-weight: bolder;
+    }
+    .slide{
+        
+        color: white;
+        text-align: center;
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        padding-left: 10px;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 20); /* Dark shadow for white text */
+    }
+    .card-group{
+        width: 1000px;
+    }
+    .card-text{
+        font-style: oblique;
+        font-size:larger;
+    }
+    .vs{
+        padding: 250px 25px 200px 25px ;
+        font-style: oblique;
+    }
+    body{
+        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    }
+    .tiffcard{
+    display: flex; /* Use flexbox for alignment */
+    align-items:center; /* Vertically align content (if needed) */
+    justify-content: flex-start; /* Align the image to the left */
+    overflow:hidden; /* Prevent content from spilling out of the card */
+}
+   #tiff{
+    width: 734px; /* Maintain the image's aspect ratio */
+    height: auto; /* Make the image take the full height of the card */
+    flex-shrink: 40; /* Prevent the image from shrinking */
+    object-fit:cover; /* Ensure the image scales properly */
+    background-color: black;
+    margin-left: -90px;
+   }
+</style>
+<body>
+    <header>
+    <nav class="navbar navbar-light" style="background-image: linear-gradient(to right, #434343 0%, black 100%);">
+        <div class="container-fluid">
+          <a class="navbar-brand banner" href="#">
+            <img src="wweimg/shows/wrestlemania.png" alt="" width="170px" height="100px" class="d-inline-block align-text-top">
+            <h1  id="banner2">WRESTLEMANIA XLI MATCHES</h1>
+          </a>
+        </div>
+      </nav>
+    </header>
+<br>  
+    <main>
+        <h2 class="slide container">DAY 1 MAIN EVENT MATCH : WWE WORLD CHAMPIONSHIP</h2>
+        <br>
+        <div class="card-group container">
+            <div class="card">
+              <img src="wweimg/superstar/gunther.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">GUNTHER</h1>
+                <p class="card-text">"WWE WORLD CHAMPION"</p>
+              </div>
+            </div>
+
+            <div class="vs">
+              <h1> VS</h1>
+            </div>
+
+            <div class="card">
+              <img src="wweimg/superstar/cena.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">JOHN CENA</h1>
+                <p class="card-text">"ROYAL RUMBLE WINNER 2025"</p>
+              </div>
+            </div>
+          </div>
+<br>
+<h2 class="slide container">DAY 2 MAIN EVENT MATCH : WWE UNIVERSAL CHAMPIONSHIP</h2>
+        <br>
+        <div class="card-group container">
+            <div class="card">
+              <img src="wweimg/superstar/cody.png" class="card-img-top" alt="..." style="background-color: black;">
+              <div class="card-body">
+                <h1 class="card-title">CODY RHODES</h1>
+                <p class="card-text">"WWE WORLD CHAMPION"</p>
+              </div>
+            </div>
+
+            <div class="vs">
+              <h1> VS</h1>
+            </div>
+
+            <div class="card">
+              <img src="wweimg/superstar/roman.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">ROMAN REIGNS</h1>
+                <p class="card-text">"THE TRIBAL CHIEF"</p>
+                <p class="card-text">"ELIMINATION CHAMBER WINNER 2025"</p>
+              </div>
+            </div>
+          </div>
+<br>
+<h2 class="slide container">WWE UNITED STATES CHAMPIONSHIP</h2>
+        <br>
+        <div class="card-group container">
+            <div class="card">
+              <img src="wweimg/superstar/nakamura.png" class="card-img-top" alt="..." style="background-color: black;">
+              <div class="card-body">
+                <h1 class="card-title">SHINSUKE NAKAMURA</h1>
+                <p class="card-text">"WWE UNITED CHAMPION"</p>
+              </div>
+            </div>
+
+            <div class="vs">
+              <h1> VS</h1>
+            </div>
+
+            <div class="card">
+              <img src="wweimg/superstar/orton.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">RANDY ORTON</h1>
+                <p class="card-text">"THE VIPER"</p>
+              </div>
+            </div>
+          </div>
+<br>
+<h2 class="slide container">WWE INTERCONTIENTAL CHAMPIONSHIP</h2>
+        <br>
+        <div class="card-group container">
+            <div class="card">
+              <img src="wweimg/superstar/bron.png" class="card-img-top" alt="..." style="background-color: black;">
+              <div class="card-body">
+                <h1 class="card-title">BRON BREAKKER</h1>
+                <p class="card-text">"WWE INTERCONTIENTAL CHAMPION"</p>
+              </div>
+            </div>
+
+            <div class="vs">
+              <h1> VS</h1>
+            </div>
+
+            <div class="card">
+              <img src="wweimg/superstar/kevin.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">KEVIN OWENS</h1>
+                <p class="card-text">"FIGHT!! OWENS!! FIGHT!!"</p>
+              </div>
+            </div>
+          </div>
+<br>
+<h2 class="slide container">WWE WOMEN'S WORLD CHAMPIONSHIP</h2>
+        <br>
+        <div class="card-group container">
+            <div class="card">
+              <img src="wweimg/superstar/reha.png" class="card-img-top" alt="..." style="background-color: black;">
+              <div class="card-body">
+                <h1 class="card-title">RHEA RIPLEY</h1>
+                <p class="card-text">"WWE WOMEN'S WORLD CHAMPIONSHIP"</p>
+              </div>
+            </div>
+
+            <div class="vs">
+              <h1> VS</h1>
+            </div>
+
+            <div class="card">
+              <img src="wweimg/superstar/becky.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">BECKY LYNCH</h1>
+                <p class="card-text">"THE MAN"</p>
+              </div>
+            </div>
+          </div>
+<br>
+<h2 class="slide container">WWE WOMEN'S CHAMPIONSHIP</h2>
+        <br>
+        <div class="card-group container">
+            <div class="card">
+              <div class="tiffcard">
+              <img src="wweimg/superstar/tiffany.png" class="card-img-top" id="tiff" alt="...">
+            </div>
+              <div class="card-body">
+                <h1 class="card-title">TIFFANY STRATTON</h1>
+                <p class="card-text">"WWE WOMEN'S CHAMPION"</p>
+              </div>
+            </div>
+
+            <div class="vs">
+              <h1> VS</h1>
+            </div>
+
+            <div class="card">
+              <img src="wweimg/superstar/charlotte.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">CHARLOTTE FLAIR</h1>
+                <p class="card-text">"THE QUEEN"</p>
+              </div>
+            </div>
+          </div>
+<br>
+<h2 class="slide container">WWE UNITED STATES CHAMPIONSHIP</h2>
+        <br>
+        <div class="card-group container">
+            <div class="card">
+              <img src="wweimg/superstar/green.png" class="card-img-top" alt="..." style="background-color: black;">
+              <div class="card-body">
+                <h1 class="card-title">CHELSEA GREEN</h1>
+                <p class="card-text">"WWE WOMEN'S WORLD CHAMPIONSHIP"</p>
+              </div>
+            </div>
+
+            <div class="vs">
+              <h1> VS</h1>
+            </div>
+
+            <div class="card">
+              <img src="wweimg/superstar/liv.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">LIV MORGAN</h1>
+                <p class="card-text">"FORMER WWE WOMEN'S CHAMPION"</p>
+              </div>
+            </div>
+          </div>
+<br>
+<h2 class="slide container">WWE INTERCONTIENTAL CHAMPIONSHIP</h2>
+        <br>
+        <div class="card-group container">
+            <div class="card">
+              <img src="wweimg/superstar/lyra.png" class="card-img-top" alt="..." style="background-color: black;">
+              <div class="card-body">
+                <h1 class="card-title">LYRA VALKYRIA</h1>
+                <p class="card-text">">WWE INTERCONTIENTAL CHAMPION"</p>
+              </div>
+            </div>
+
+            <div class="vs">
+              <h1> VS</h1>
+            </div>
+
+            <div class="card">
+              <img src="wweimg/superstar/iyo.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">IYO SKY</h1>
+                <p class="card-text">"THE GENIUS OF THE SKY"</p>
+              </div>
+            </div>
+          </div>
+<br>
+<h2 class="slide container">THE BLOODLINE RULES</h2>
+        <br>
+        <div class="card-group container">
+            <div class="card">
+              <img src="wweimg/superstar/solo.png" class="card-img-top" alt="..." style="background-color: black;">
+              <div class="card-body">
+                <h1 class="card-title">SOLO SIKOA</h1>
+                <p class="card-text">"MEMBER OF BLOODLINE"</p>
+              </div>
+            </div>
+
+            <div class="vs">
+              <h1> VS</h1>
+            </div>
+
+            <div class="card">
+              <img src="wweimg/superstar/fatu.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">JACOB FATU</h1>
+                <p class="card-text">"MEMBER OF BLOODLINE"</p>
+              </div>
+            </div>
+          </div>
+<br>
+<h2 class="slide container">LAST MAN STANDING</h2>
+        <br>
+        <div class="card-group container">
+            <div class="card">
+              <img src="wweimg/superstar/seth.png" class="card-img-top" alt="..." style="background-color: black;">
+              <div class="card-body">
+                <h1 class="card-title">SETH ROLLINS</h1>
+                <p class="card-text">"BURN IT DOWN"</p>
+              </div>
+            </div>
+
+            <div class="vs">
+              <h1> VS</h1>
+            </div>
+
+            <div class="card">
+              <img src="wweimg/superstar/drew.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">DREW MCINTYRE</h1>
+                <p class="card-text">"THE SCOTTISH WARRIOR"</p>
+              </div>
+            </div>
+          </div>
+<br>
+<h2 class="slide container">NO DISQUALIFICATION</h2>
+        <br>
+        <div class="card-group container">
+            <div class="card">
+              <img src="wweimg/superstar/punk.png" class="card-img-top" alt="..." style="background-color: black;">
+              <div class="card-body">
+                <h1 class="card-title">CM PUNK</h1>
+                <p class="card-text">"BEST IN THE WORLD"</p>
+              </div>
+            </div>
+
+            <div class="vs">
+              <h1> VS</h1>
+            </div>
+
+            <div class="card">
+              <img src="wweimg/superstar/penta.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">PENTA</h1>
+                <p class="card-text">"THE MASTER OF ZERO FEAR"</p>
+              </div>
+            </div>
+          </div>
+<br>
+<h2 class="slide container">I QUIT MATCH</h2>
+        <br>
+        <div class="card-group container">
+            <div class="card">
+              <img src="wweimg/superstar/jey.png" class="card-img-top" alt="..." style="background-color: black;">
+              <div class="card-body">
+                <h1 class="card-title">JEY USO</h1>
+                <p class="card-text">"YEET"</p>
+              </div>
+            </div>
+
+            <div class="vs">
+              <h1> VS</h1>
+            </div>
+
+            <div class="card">
+              <img src="wweimg/superstar/jimmy.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">JIMMY USO</h1>
+                <p class="card-text">"NO YEET"</p>
+              </div>
+            </div>
+          </div>
+<br>
+<h2 class="slide container">FALLS COUNT ANYWHERE</h2>
+        <br>
+        <div class="card-group container">
+            <div class="card">
+              <img src="wweimg/superstar/howdy.png" class="card-img-top" alt="..." style="background-color: black;">
+              <div class="card-body">
+                <h1 class="card-title">UNCLE HOWDY</h1>
+                <p class="card-text">"WYATT SICKS"</p>
+              </div>
+            </div>
+
+            <div class="vs">
+              <h1> VS</h1>
+            </div>
+
+            <div class="card">
+              <img src="wweimg/superstar/logan.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">LOGAN PAUL</h1>
+                <p class="card-text">"THE MAVERICK"</p>
+              </div>
+            </div>
+          </div>
+<br>
+<h2 class="slide container">NO HOLD BARRED STREET FIGHT</h2>
+        <br>
+        <div class="card-group container">
+            <div class="card">
+              <img src="wweimg/superstar/damian.png" class="card-img-top" alt="..." style="background-color: black;">
+              <div class="card-body">
+                <h1 class="card-title">DAMIAN PRIEST</h1>
+                <p class="card-text">"FORMER WWE WORLD CHAMPION"</p>
+              </div>
+            </div>
+
+            <div class="vs">
+              <h1> VS</h1>
+            </div>
+
+            <div class="card">
+              <img src="wweimg/superstar/balor.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">FINN BALOR</h1>
+                <p class="card-text">"MEMBER OF THE JUDGEMENT DAY"</p>
+              </div>
+            </div>
+          </div>
+<br>
+<h2 class="slide container">ONE VS ONE</h2>
+        <br>
+        <div class="card-group container">
+            <div class="card">
+              <img src="wweimg/superstar/raquel.png" class="card-img-top" alt="..." style="background-color: black;">
+              <div class="card-body">
+                <h1 class="card-title">RAQUEL RODRIGUEZ</h1>
+                <p class="card-text">"MEMBER OF THE JUDGEMENT DAY"</p>
+              </div>
+            </div>
+
+            <div class="vs">
+              <h1> VS</h1>
+            </div>
+
+            <div class="card">
+              <img src="wweimg/superstar/alexa.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">ALEXA BLISS</h1>
+                <p class="card-text">"THE GODDESS"</p>
+              </div>
+            </div>
+          </div>
+<br>
+<h2 class="slide container">STREET FIGHT</h2>
+        <br>
+        <div class="card-group container">
+            <div class="card">
+              <img src="wweimg/superstar/bayley.png" class="card-img-top" alt="..." style="background-color: black;">
+              <div class="card-body">
+                <h1 class="card-title">BAYLEY</h1>
+                <p class="card-text">"FORMER MEMBER OF DAMAGE CTRL"</p>
+              </div>
+            </div>
+
+            <div class="vs">
+              <h1> VS</h1>
+            </div>
+
+            <div class="card">
+              <img src="wweimg/superstar/nikki.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">NIKKI CROSS</h1>
+                <p class="card-text">"WYATT SICKS"</p>
+              </div>
+            </div>
+          </div>
+<br>
+    </main>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

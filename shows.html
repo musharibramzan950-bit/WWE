@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWE Shows</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    .banner {
+        background-image: url("wweimg/background/bgmshows.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .wweshows img {
+        width: 90px; /* Adjusted size of the logo */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .shows {
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    .raw{
+        background-image: url(wweimg/shows/rawbgm.jpg);
+        background-size: cover;
+        background-position: center;
+        /* padding-top: 40px;
+        padding-bottom: 80px; */
+        padding: 40px 40px 80px 40px;
+        width: 750px;
+        height: auto;
+    }
+    .smackdown{
+        background-image: url(wweimg/shows/smackdown.jpg);
+        background-size: cover;
+        background-position: center;
+        /* padding-top: 60px;
+        padding-bottom: 100px; */
+        padding: 80px 40px 140px 40px;
+        width: 750px;
+        height: auto;
+    }
+    .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Aligns text content in the center */
+    }
+  .card-img-top{
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+    padding: 30px;
+  }
+  span{
+    color: grey;
+  }
+    body{
+        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    }
+    
+</style>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <img src="wweimg/background/wwelogo.jpg" id="logo" style="width: 40px;" alt="WWE Logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" style="padding-left: 30px;" aria-current="page" href="active/card.html">CARDS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" style="padding-left: 30px;" href="shows.html">SHOWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="padding-left: 30px;" href="superstars.html">SUPERSTARS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="padding-left: 30px;" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                MORE
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">CHAMPIONSHIP</a></li>
+                                <li><a class="dropdown-item" href="#">SHOP</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex ms-auto">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-danger" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    <br>
+    <div class="banner container">
+
+        <div class="wweshows">
+            <img src="wweimg/background/wwelogo.jpg" alt="WWE Logo">
+        </div>
+        <h1 class="shows">SHOWS</h1>
+    </div>
+    <br>
+    <hr class="container" style="color: red; height: 2.5px;">
+
+    </header>
+<br>
+<main class="container">
+    <h1><span>WWE:</span> REGULAR SHOWS</h1> 
+    <br>
+        <div class="card raw">
+            <img src="wweimg/shows/wweraw.png" class="card-img" alt="...">
+          </div>
+    <br>
+    <div class="card smackdown">
+        <img src="wweimg/shows/wwesmackdown.png" class="card-img" alt="...">
+    </div>
+    <br>
+    <hr class="container" style="color: black; height: 2.5px;">
+    <br>
+    <br>
+    <h1><span>WWE:</span> PREMIUM LIVE EVENTS</h1>
+    <br>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="wweimg/shows/wrestlemania.png" class="card-img-top" alt="..." style="padding: 32px;">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="wweimg/shows/summerslam.png" class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="wweimg/shows/royalrumble.png" class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="wweimg/shows/hellinacell.png" class="card-img-top" alt="..." style="padding: 90px;">
+          </div>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img src="wweimg/shows/moneyinthebank.png" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">    
+              <img src="wweimg/shows/chamber.png" class="card-img-top" alt="..." style="padding: 50px;">
+            </div>
+          </div>
+        <div class="col">
+        <div class="card">
+            <img src="wweimg/shows/survior.png" class="card-img-top" alt="...">
+        </div>
+        </div>
+        <div class="col">
+        <div class="card">
+            <img src="wweimg/shows/clash.png" class="card-img-top" alt="..." style="padding-top:110px; padding-bottom:110px;">
+        </div>
+        </div>
+        <div class="col">
+        <div class="card">
+            <img src="wweimg/shows/crownjewel.png" class="card-img-top" alt="...">
+        </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="wweimg/shows/backlash.png" class="card-img-top" alt="..." style="padding-top:70px; padding-bottom:65px;">
+            </div>
+        </div>
+
+    </div>
+</main>
+<br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

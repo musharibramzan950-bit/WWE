@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWE Superstars</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    .banner {
+        background-image: url("wweimg/background/wwesuperstars.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 60px;
+        text-align: center;
+    }
+
+    .wwesuperstars img {
+        width: 90px; /* Adjusted size of the logo */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .superstars {
+        color: white;
+        font-size: 28px;
+        font-weight: bolder;
+    }
+
+    .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Aligns text content in the center */
+    }
+  span{
+    color: grey;
+   }
+   .card{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+   }
+   .name{
+    color: white;
+    text-align: left;
+    padding-top: 390px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 100); /* Dark shadow for white text */
+   }
+   .champion{
+    color: white;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 100); 
+   }
+   .wrestler{
+    color: white;
+    text-align: left;
+    padding-top: 295px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 100); 
+   }
+   .tiffcard{
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically align content (if needed) */
+    justify-content: flex-start; /* Align the image to the left */
+    overflow:hidden; /* Prevent content from spilling out of the card */
+}
+   #tiff{
+    width: 694px; /* Maintain the image's aspect ratio */
+    height: auto; /* Make the image take the full height of the card */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    object-fit: cover; /* Ensure the image scales properly */
+     background-image: linear-gradient(to right, #434343 0%, black 100%);
+    margin-left: 50px;
+   }
+
+   .tiffcard2{
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically align content (if needed) */
+    justify-content: flex-start; /* Align the image to the left */
+    overflow: hidden; /* Prevent content from spilling out of the card */
+}
+   #tiff2{
+    width: 510px; /* Maintain the image's aspect ratio */
+    height: auto; /* Make the image take the full height of the card */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    object-fit: cover; /* Ensure the image scales properly */
+    background-color: black;
+    margin-left: 50px;
+   }
+   body{
+        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <img src="wweimg/background/wwelogo.jpg" id="logo" style="width: 40px;" alt="WWE Logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" style="padding-left: 30px;" aria-current="page" href="active/card.html">CARDS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="padding-left: 30px;" href="shows.html">SHOWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" style="padding-left: 30px;" href="superstars.html">SUPERSTARS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="padding-left: 30px;" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                MORE
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">CHAMPIONSHIP</a></li>
+                                <li><a class="dropdown-item" href="#">SHOP</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex ms-auto">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-danger" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    <br>
+    <div class="banner container">
+
+        <div class="wwesuperstars">
+            <img src="wweimg/background/wwelogo.jpg" alt="WWE Logo">
+        </div>
+        <h1 class="superstars">SUPERSTARS</h1>
+    </div>
+    <br>
+    <hr class="container" style="color: red; height: 2.5px;">
+
+    </header>
+<br>
+<main class="container">
+    <h1><span>WWE:</span> CHAMPIONS</h1> 
+    <br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="wweimg/superstar/cody.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title name">Cody Rhodes</h2>
+                <h4 class="card-champ champion">WWE Universal Champion</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/gunther.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title name">Gunther</h2>
+                  <h4 class="card-champ champion">WWE Heavyweight Champion</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/reha.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title name">Reha Ripley</h2>
+                  <h4 class="card-champ champion">WWE Women's World Champion</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card tiffcard">
+              <img src="wweimg/superstar/tiffany.png" class="card-img" id="tiff" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title name">Tiffany Stratton</h2>
+                  <h4 class="card-champ champion">WWE Women's Champion</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/nakamura.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title name"> Shinsuke Nakamura</h2>
+                  <h4 class="card-champ champion">WWE United States Champion</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/bron.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title name">Bron Breakker</h2>
+                  <h4 class="card-champ champion">WWE Intercontiental Champion</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/green.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title name">Chelsea Green</h2>
+                  <h4 class="card-champ champion">WWE United States Champion</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/lyra.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title name">Lyra Valkyria</h2>
+                  <h4 class="card-champ champion">WWE Intercontiental Champion</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/dragon.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title name">Dragon Lee</h2>
+                  <h4 class="card-champ champion">WWE Speed Champion</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/candice.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title name">Candice LeRae</h2>
+                  <h4 class="card-champ champion">WWE Women's Speed Champion</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/tagchamp.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title name">The War Raiders</h2>
+                  <h4 class="card-champ champion">World Tag Team Champions</h4>
+              </div>
+            </div>
+          </div>
+      </div>
+<br>
+    <hr class="container" style="color: black; height: 2.5px;">
+    <br>
+    <br>
+    <h1><span>WWE:</span> Male Superstars</h1>
+<br>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="wweimg/superstar/styles.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">AJ Styles</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/theory.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Austin Theory</h2>
+              </div>
+            </div>
+          </div>
+        <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/bron.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Bron Breakker</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/braun.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Braun Strowman</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/bronson.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Bronson Reed</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/cody.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Cody Rhodes</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/gable.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Chad Gable</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/damian.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Damian Priest</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/dragon.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Dragon Lee</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/drew.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Drew McIntyre</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/dominik.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Dominik Mysterio</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/erik.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Erik</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/balor.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Finn Balor</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/gunther.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Gunther</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/ivar.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Ivar</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/jey.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Jey Uso</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/jimmy.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Jimmy Uso</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/cena.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">John Cena</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/fatu.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Jacob Fatu</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/kevin.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Kevin Owens</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/kross.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Karrion Kross</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/knight.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">LA Knight</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/logan.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Logan Paul</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/miz.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">The Miz</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/rey.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Rey Mysterio</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/orton.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Randy Orton</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/roman.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Roman Reigns</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/sami.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Sami Zyan</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/solo.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Solo Sikoa</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/seth.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Seth Rollins</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/nakamura.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Shinsuke Nakamura</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/tonga.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Toma Tonga</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/loa.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Tonga Loa</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/howdy.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Uncle Howdy</h2>
+              </div>
+            </div>
+          </div>
+          
+    </div>
+<br>
+    <hr class="container" style="color: black; height: 2.5px;">
+    <br>
+    <br>
+    <h1><span>WWE:</span> Female Superstars</h1>
+<br>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="wweimg/superstar/alexa.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">Alexa Bliss</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="wweimg/superstar/becky.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">Becky Lynch</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img src="wweimg/superstar/bayley.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Bayley</h2>
+              </div>
+            </div>
+          </div>
+        <div class="col">
+        <div class="card">
+            <img src="wweimg/superstar/charlotte.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">Charlotte Flair</h2>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card">
+            <img src="wweimg/superstar/green.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">Chelsea Green</h2>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card">
+            <img src="wweimg/superstar/cora.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">Cora Jade</h2>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="wweimg/superstar/candice.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">Candice Green</h2>
+            </div>
+            </div>
+    </div>
+    <div class="col">
+        <div class="card">
+        <img src="wweimg/superstar/dakota.png" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <h2 class="card-title wrestler">Dakota Kai</h2>
+        </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="wweimg/superstar/iyo.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">Iyo Sky</h2>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card">
+            <img src="wweimg/superstar/kairi.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">Kairi Sane</h2>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="wweimg/superstar/kelly.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">Kelly Kincaid</h2>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="wweimg/superstar/kendal.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">Kendal Grey</h2>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="wweimg/superstar/liv.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler"> Liv Morgan</h2>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="wweimg/superstar/lyra.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">Lyra Valkyria</h2>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="wweimg/superstar/nikki.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">Nikki Cross</h2>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="wweimg/superstar/reha.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">Reha Ripley</h2>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="wweimg/superstar/raquel.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">Raquel Rodriguez</h2>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card tiffcard2">
+            <img src="wweimg/superstar/tiffany.png" class="card-img" id="tiff2" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">Tiffany Stratton</h2>
+            </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr class="container" style="color: black; height: 2.5px;">
+    <br>
+    <br>
+    <h1><span>WWE:</span> Authority</h1>
+<br>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="wweimg/authority/adam.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">Adam Pearce</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img src="wweimg/authority/nick.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Nick Aldis</h2>
+              </div>
+            </div>
+          </div>
+        <div class="col">
+          <div class="card">
+            <img src="wweimg/authority/tripleh.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">Triple H</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img src="wweimg/authority/stephanie.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Stephanie McMahon</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/authority/heyman.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Paul Heyman</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/authority/ellering.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Paul Ellering</h2>
+              </div>
+            </div>
+          </div>
+    </div>
+    <br>
+    <hr class="container" style="color: black; height: 2.5px;">
+    <br>
+    <br>
+    <h1><span>WWE:</span> Commentators</h1>
+<br>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="wweimg/authority/cole.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h2 class="card-title wrestler">Michael Cole</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img src="wweimg/authority/graves.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Corey Graves</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/authority/saxton.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Byron Saxton</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/authority/pat.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Pat McAfee</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/authority/barrett.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Wade Barrett</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/authority/howard.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Blake Howardd</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="wweimg/authority/mike.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                  <h2 class="card-title wrestler">Mike Rome</h2>
+              </div>
+            </div>
+          </div>
+    </div>
+    <br>
+    <br>  
+</main>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
